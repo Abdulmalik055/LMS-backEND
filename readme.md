@@ -32,7 +32,7 @@
 
 ### here ui for Instructor
 
-![alt text](./image/ui.png)
+![alt text](./image/Ui.png)
 
 # how can use api
 
