@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>edit course</h1>
+    <form action="/instructor/course/update/<%= course._id %>/<%= userId %>" method="post">
+        <h3>Course: <%= course.course %> </h3>
+        <input value="<%= course.course%>" name="course" placeholder="course">
+        <input value="<%= course.description%>" name="description" placeholder="Description">
+        <input value="<%= course.location%>" name="location" placeholder="Location">
+        <button>submit</button>
+    </form>
+    <br>
+    <a href="/instructor/allCourses/<%= userId%>" style="background: rgb(0, 78, 126); color: rgb(255, 255, 255); padding: 7px; border-radius: 10px;">back</a>
+
+</body>
+
+</html>
