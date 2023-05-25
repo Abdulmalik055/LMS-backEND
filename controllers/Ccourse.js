@@ -66,7 +66,7 @@ update: (req, res) => {
     const update = req.params.updateId;
     const userId = req.params.userId;
     Course.findById(update).then((course) => {
-      res.render("UpdateCourse", { course, userId });
+      res.render("updateCourse", { course, userId });
     });
   },
   
